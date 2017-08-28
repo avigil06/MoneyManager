@@ -8,9 +8,5 @@ storiesOf('Button', module)
 ))
 
 .add('disabled', () => (
-  <Button mode="disabled">Hello</Button>
-))
-
-.add('error', () => (
-  <Button mode="error">Hello</Button>
+  <Button disabled>Hello</Button>
 ))
