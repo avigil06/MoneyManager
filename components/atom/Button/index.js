@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 
 const Button = styled.button`
   border: 2px solid transparent;
-  border-color: ${props => props.disabled ? 'grey' : 'blue'};
-  border-radius: 12px;
-  color: ${props => props.disabled ? 'grey' : 'blue'};
-  background-color: white;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-color: ${props => props.disabled ? 'grey' : 'white'};
+  color: ${props => props.disabled ? 'grey' : 'white'};
+  background-color: transparent;
   padding: 0.25em 1em;
   transition: all 300ms ease-in-out;
   opacity: ${props => props.disabled ? .65 : 1};
@@ -16,15 +18,6 @@ const Button = styled.button`
   outline: none;
   font-weight: bold;
   text-transform: uppercase;
-
-  &:hover {
-    background-color: blue;
-    color: white;
-  }
-
-  &:focus {
-    color: red;
-  }
 `
 
 Button.propTypes = {
